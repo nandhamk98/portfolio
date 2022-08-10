@@ -41,7 +41,7 @@ export function IntroductionComp() {
           <FontAwesomeIcon icon={faLinkedin} className="intro-icon" />{" "}
         </a>
         <a
-          href="https://drive.google.com/file/d/1rdKzmbvfBlQVe-VGcySMZrnpCynnBE5V/view?usp=sharing"
+          href="https://drive.google.com/drive/folders/16hHzVl6D_XoKWPMLfx3geYVGRD0Ng-lx?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="intro-resume"
