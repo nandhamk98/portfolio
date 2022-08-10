@@ -1,5 +1,11 @@
 import profilePhoto from "../resources/images/nandhakumar_trek.jpg";
 import { ParticleBackground } from "./ParticleBackground";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faHackerrank,
+} from "@fortawesome/free-brands-svg-icons";
 
 export function IntroductionComp() {
   return (
@@ -18,21 +24,21 @@ export function IntroductionComp() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-github intro-icon"></i>{" "}
+          <FontAwesomeIcon icon={faGithub} className="intro-icon" />{" "}
         </a>
         <a
           href="https://www.hackerrank.com/nandha_98"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-hackerrank intro-icon"></i>{" "}
+          <FontAwesomeIcon icon={faHackerrank} className="intro-icon" />{" "}
         </a>
         <a
           href="https://github.com/nandhamk98"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin intro-icon"></i>{" "}
+          <FontAwesomeIcon icon={faLinkedin} className="intro-icon" />{" "}
         </a>
         <a
           href="https://drive.google.com/file/d/1rdKzmbvfBlQVe-VGcySMZrnpCynnBE5V/view?usp=sharing"
