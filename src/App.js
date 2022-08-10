@@ -4,7 +4,7 @@ import { IntroductionComp } from "./components/IntroductionComp";
 import { TechStackComp } from "./components/TechStackComp";
 import { ProjectComp } from "./components/ProjectComp";
 import { ProfessionalComp } from "./components/ProfessionalComp";
-import { NavBarComp } from "./components/NavBarComp";
+// import { NavBarComp } from "./components/NavBarComp";
 import { AboutComp } from "./components/AboutComp";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "@emailjs/browser";
@@ -13,21 +13,7 @@ import Button from "@mui/material/Button";
 function App() {
   return (
     <div className="App">
-      {/* <div className="nav">
-        <a href="#introductionComp" className="nav-item">
-          intro
-        </a>
-        <a href="#techStackComp" className="nav-item">
-          tech
-        </a>
-        <a href="#projectComp" className="nav-item">
-          Projects
-        </a>
-        <a href="#professionalComp" className="nav-item">
-          professional Experience
-        </a>
-      </div> */}
-      <NavBarComp />
+      {/* <NavBarComp /> */}
       <IntroductionComp />
       <AboutComp />
       <ProjectComp />
