@@ -1,6 +1,9 @@
 import ecom from "../resources/images/ecom.jpeg";
 import zoom from "../resources/images/zoom.jpg";
 import manga from "../resources/images/manga.png";
+import Button from "@mui/material/Button";
+import CellTowerIcon from "@mui/icons-material/CellTower";
+import CodeIcon from "@mui/icons-material/Code";
 
 export function ProjectComp() {
   return (
@@ -53,22 +56,33 @@ function Project({ image, name, description, github, live, framework }) {
         <h2>{name}</h2>
         <p>{description}</p>
         <div className="project-btn-container">
-          <a
-            href={live}
-            className="project-button"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Button
+            variant="contained"
+            startIcon={<CellTowerIcon />}
+            color="error"
           >
-            View Live
-          </a>
-          <a
-            href={github}
-            className="project-button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View on GitHub
-          </a>
+            <a
+              href={live}
+              className="project-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live
+            </a>
+          </Button>
+          <Button variant="contained" startIcon={<CodeIcon />}>
+            <a
+              href={github}
+              className="project-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+          </Button>
+          <Button variant="contained" startIcon={<CodeIcon />} color="warning">
+            Delete
+          </Button>
         </div>
         <div className="project-framework">
           {framework.map((el) => (

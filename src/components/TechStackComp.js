@@ -10,7 +10,7 @@ import react from "../resources/svg/react.svg";
 export function TechStackComp() {
   return (
     <div className="techStackComp-container" id="techStackComp">
-      <p className="techStackComp-header">Tech-stack familiar with</p>
+      <p className="techStackComp-header">Tech-stack</p>
       <div className="techStackComp-icons">
         <img src={html} alt="html5" />
         <img src={css} alt="css" />
